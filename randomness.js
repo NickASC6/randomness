@@ -8,22 +8,33 @@ function randomNumber(){
 }
 randomNumber();
 function randomLetter(){
-    let letters = ["A","B","C","D","F","G","H","I","J","K","L","M","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-   let randomLetters = letters.random(); 
-    console.log(randomLetters)
+    const alphabet = "abcdefghijklmnopqrstuvwxyz";
+    let letters = Math.random();
+    let randomLetters = letters * 26
+    let integer = Math.floor(randomLetters)
+    Final = alphabet[integer]
+    console.log(Final);
 }
 randomLetter();
+
+function randomFood(array){ 
+    const foods = [
+         "pizza",
+         "burgers",
+         "rice and beans",
+         "lasagna",
+         "macaroni and cheese",
+         "baked potatoes"
+         ];
+    let aFood = Math.random() * foods.length; 
+    let final = Math.floor(aFood);
+    console.log(foods[final]);
+ }      
+randomFood();
 // GLOBAL VARIABLES //
 /////////////////////
-// const alphabet = "abcdefghijklmnopqrstuvwxyz"
-// const foods = [
-// "pizza",
-// "burgers",
-// "rice and beans",
-// "lasagna",
-// "macaroni and cheese",
-// "baked potatoes"
-// ];
+ 
+// 
 // const students = [
 // "Bob",
 // "Martin",
